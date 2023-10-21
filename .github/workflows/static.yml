@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta content="minimum-scale=1.0, width=device-width, maximum-scale=0.6667, user-scalable=no" name="viewport">
+    <title></title>
+</head>
+<body>
+    <table align="center" >
+        <tr align=”center”>
+            <td align=”center”>
+                <b>
+                   <img src="https://www.florence.com.tr/_assets/images/logo.svg" alt="" width="100" height="100" /> <print>FLORENCE NIGHTINGALE HASTANESİ PERİFERİK YAYMA </print>
+                </b>
+                <br />
+                <br />
+                <br />
+                <br />
+                <print> ADI SOYADI :</print>
+                <input type="text" size="40 px" />
+                <br /><br />
+                <print> PROTOKOL :</print>
+                <input type="text" size="40 px" />
+                <br /><br /><br />
+                            <table class="tblCellCounter" CELLPADDING="10" CELLSPACING="1">
+
+                                
+                                <colgroup style="background-color: rgb(255,255,255)"></colgroup>
+                                <colgroup style="background-color: rgb(191,207,255); width: 40px"></colgroup>
+                                <colgroup style="background-color: rgb(255,255,255)"></colgroup>
+                                <colgroup style="background-color: rgb(255,255,255)"></colgroup>
+                                <tbody>
+                                    <tr class="trVurgu">
+                                        <td>Hücre Tipi</td>
+                                        <td>Sayı      .</td>
+                                        <td>Toplam (%)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input class="CellType" type="button" onclick="my[0]++; calc();" value="ÇOMAK"></td>
+
+                                        <td><span id="spnCount_my_0" class="Count">.</span></td>
+                                        <td><span id="spnPercent_Total_my_0" class="Percent_Total">.</span></td>
+
+                                        <td><input class="CellType" type="button" onclick="my[0]--; calc();" value="-"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input class="CellType" type="button" onclick="my[1]++; calc();" value="PARÇALI"></td>
+
+                                        <td><span id="spnCount_my_1" class="Count">.</span></td>
+                                        <td><span id="spnPercent_Total_my_1" class="Percent_Total">.</span></td>
+                                        <td><input class="CellType" type="button" onclick="my[1]--; calc();" value="-"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input class="CellType" type="button" onclick="my[2]++; calc();" value="LENFOSİT"></td>
+                                        <td><span id="spnCount_my_2" class="Count">.</span></td>
+                                        <td><span id="spnPercent_Total_my_2" class="Percent_Total">.</span></td>
+                                        <td><input class="CellType" type="button" onclick="my[2]--; calc();" value="-"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input class="CellType" type="button" onclick="my[3]++; calc();" value="MONOSİT"></td>
+                                        <td><span id="spnCount_my_3" class="Count">.</span></td>
+                                        <td><span id="spnPercent_Total_my_3" class="Percent_Total">.</span></td>
+                                        <td><input class="CellType" type="button" onclick="my[3]--; calc();" value="-"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input class="CellType" type="button" onclick="my[4]++; calc();" value="EOZINOFİL"></td>
+                                        <td><span id="spnCount_my_4" class="Count">.</span></td>
+                                        <td><span id="spnPercent_Total_my_4" class="Percent_Total">.</span></td>
+                                        <td><input class="CellType" type="button" onclick="my[4]--; calc();" value="-"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input class="CellType" type="button" onclick="my[5]++; calc();" value="BAZOFİL"></td>
+                                        <td><span id="spnCount_my_5" class="Count">.</span></td>
+                                        <td><span id="spnPercent_Total_my_5" class="Percent_Total">.</span></td>
+                                        <td><input class="CellType" type="button" onclick="my[5]--; calc();" value="-"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input class="CellType" type="button" onclick="my[6]++; calc();" value="REAKTİF"></td>
+                                        <td><span id="spnCount_my_6" class="Count">.</span></td>
+                                        <td><span id="spnPercent_Total_my_6" class="Percent_Total">.</span></td>
+                                        <td><input class="CellType" type="button" onclick="my[6]--; calc();" value="-"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input class="CellType" type="button" onclick="my[7]++; calc();" value="BLAST"></td>
+                                        <td><span id="spnCount_my_7" class="Count">.</span></td>
+                                        <td><span id="spnPercent_Total_my_7" class="Percent_Total">.</span></td>
+                                        <td><input class="CellType" type="button" onclick="my[7]--; calc();" value="-"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input class="CellType" type="button" onclick="my[8]++; calc();" value="DİĞER"></td>
+                                        <td><span id="spnCount_my_8" class="Count">.</span></td>
+                                        <td><span id="spnPercent_Total_my_8" class="Percent_Total">.</span></td>
+                                        <td><input class="CellType" type="button" onclick="my[8]--; calc();" value="-"></td>
+                                    </tr>
+                                    <tr class="trVurgu">
+                                        <td>Genel Toplam</td>
+                                        <td><span id="spnTotalCount" class="Count">.</span></td>
+                                        <td><span id="spnTotalPercent" class="Percent_Total">.</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4">
+                                            Sayılmak İstenen Hücre Sayısı: <select id="ddlLimit">
+                                                <option value="25">25</option>
+                                                <option value="50">50</option>
+                                                <option value="100" selected="selected">100</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                <td></td>
+                                <tr>
+                                    <td colspan="4"><input type="button" onclick="startup(); calc();" value="Yeni Sayım"></td>
+                                </tr>
+
+                                </tbody>
+
+                            </table>
+                <print> ERİTROSİTLER :</print>
+                <input type="text" size="70 px" />
+                <br /> <br />
+                <print> TROMBOSİTLER :</print>
+                <input type="text" size="70 px" />
+                <br /> <br />
+                       <input type="button" onclick="window.print()" value="YAZDIR">
+<td>
+        <tr>
+            <table>
+                
+                <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+                <script>
+                    $('.ciktiButon').click(function () {
+                        window.print();
+                    });
+                </script>
+
+                <script type="text/javascript">
+
+                    var my = new Array();
+
+                    startup();
+
+                    function startup() {
+                        for (var i = 0; i < 9; i++) {
+                            my[i] = 0;
+                        }
+                    }
+
+
+
+                    function calc() {
+
+                        var gStr = "";
+                        var spn;
+                        var TotalCount = 0;
+
+                        for (var i = 0; i < 9; i++) {
+                            gStr = "spnCount_my_" + i;
+                            spn = document.getElementById(gStr);
+                            spn.innerHTML = my[i];
+                            TotalCount += my[i];
+                        }
+
+
+                        gStr = "spnTotalCount";
+                        spn = document.getElementById(gStr);
+                        spn.innerHTML = TotalCount;
+
+
+                        //Yüzde
+                        var gDbl = 0;
+
+                        var gTotalPercent_my = 0;
+
+                        for (var i = 0; i < 9; i++) {
+                            gDbl = my[i] / TotalCount * 100;
+                            gDbl = Math.round(gDbl * 10) / 10;
+
+                            gStr = "spnPercent_Total_my_" + i;
+                            spn = document.getElementById(gStr);
+                            spn.innerHTML = gDbl;
+
+                            gTotalPercent_my += gDbl;
+
+                        }
+
+
+                        gStr = "spnTotalPercent";
+                        spn = document.getElementById(gStr);
+                        spn.innerHTML = Math.round(gTotalPercent_my);
+
+                        //Uyarı
+                        var gInt = document.getElementById("ddlLimit").value;
+                        if (TotalCount == gInt) {
+                            alert("İstenen sayıya ulaşıldı!");
+                        }
+
+                    }
+
+
+                </script>
+
+</body>
+</html>
